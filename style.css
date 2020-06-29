@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 64px 800px;
+    grid-template-areas:
+        "header"
+        "home"
+    ;
+}
+#cabecalho{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    height: 64px;
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#home{
+    grid-area: home;
+    display: flex;
+}
+#profile{
+    width: 283px;
+    height: 344px;
+}
