@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div id="grid-container">
-        <header id="cabecalho">
-            <div id="logo"><h1>MW</h1></div>
+        <header id="head">
+            <div id="logo">
+                <a href="#home">
+                    <h1>MW</h1>
+                </a>
+            </div>
             <nav id="menu">
-                <a class="itemmenu" href="#home" id="linkhome">Home</a>
-                <a class="itemmenu" href="#sobre" id="linksobre">Sobre</a>
-                <a class="itemmenu" href="#habilidades" id="linkhabilidades">Habilidades</a>
-                <a class="itemmenu" href="#curriculo" id="linkcurriculo">Currículo</a>
-                <a class="itemmenu" href="#projetos" id="linkprojetos">Projetos</a>
-                <a class="itemmenu" href="#certificados" id="linkcertificados">Certificados</a>
+                <a class="itemmenu" href="#home" id="linkhome">HOME</a>
+                <a class="itemmenu" href="#about" id="linksobre">SOBRE</a>
+                <a class="itemmenu" href="#skills" id="linkhabilidades">HABILIDADES</a>
+                <a class="itemmenu" href="#curriculum" id="linkcurriculo">CURRÍCULO</a>
+                <a class="itemmenu" href="#projects" id="linkprojetos">PROJETOS</a>
+                <a class="itemmenu" href="#certificates" id="linkcertificados">CERTIFICADOS</a>
             </nav>
         </header>
     
-        <section id="home">
-            <div>
-                <img id="profile" src="./assets/myimg.jpeg" alt="Marcos Winicios">
+        <section class="page" id="home">
+            <div class="item item-1" id="profile-image">
+                <img src="./assets/myimg.jpeg" alt="Marcos">
             </div>
-            <div>
-                <h1>Marcos Winicios <br> Pereira Martins</h1>
-                <h4>Bacharelado em Sistemas de Informação</h4>
+            <div class="item item-2" id="main-text">
+                <h1>Marcos Winicios</h1> 
+                <h1>Pereira Martins</h1>
+                <h4>Bacharelando em Sistemas de Informação</h4>
             </div>
+
+        </section>
+        <section class="page" id="about">
+            <h1>Sobre</h1>
             
+        </section>
+        <section class="page" id="skills">
+            <h1>Skills</h1>
+        </section>
+        <section class="page" id="curriculum">
+            <h1>Currículo</h1>
+        </section>
+        <section  class="page" id="projects">
+            <h1>Projetos</h1>
+        </section>
+        <section  class="page" id="certificates">
+            <h1>Certificados</h1>
         </section>
     </div>
     
