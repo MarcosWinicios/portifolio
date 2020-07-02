@@ -1,22 +1,26 @@
-#grid-container{
-    background: rgb(0, 0, 0);
+#grid-container, #head{
+    background: rgb(0, 0, 0, 0.99);
 }
 a{
     text-decoration: none;
 }
-.page{
-    background-color: rgb(0, 0, 1);
-}
-.page h1{
+p, h1, h4, a{
     color: #ffffff;
+}
+.page{
+
+    background-color: rgba(0, 0, 0, 0.95);
+    border: solid  black 1px;
+    border-radius: 10px;
+    border-style: ridge;
+    padding: 30px;
 }
 
 #head{
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.99);
+    width: 1fr;
 }
-#head a{
-    color: #ffffff;
-}
+
 
 #menu a{
     font-size: 22px;
@@ -30,6 +34,13 @@ a{
     border-bottom: solid 5px #ffffff;
 }
 
-#main-text{
-    color: #ffffff;
+.title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px; 
+    text-transform: capitalize; 
+    margin-bottom: 28px;
+    
 }
+

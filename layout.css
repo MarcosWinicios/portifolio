@@ -11,7 +11,7 @@
 
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows:7vh 100vh 100vh 100vh 100vh 100vh 100vh;
+    grid-template-rows:7vh 85vh auto 100vh 100vh 100vh 100vh;
     grid-template-areas: 
         ". header ."      
         ". home ."
@@ -36,49 +36,97 @@
 #home{
     grid-area: home;
     display: flex;
-    align-items: stretch;
-    justify-content: space-between;
+    flex-grow: 1;
+    align-content: space-around;
+    flex-direction: column;
     
-    
-}
-#home .item{
-    background-color: rgb(0, 0, 0);
 }
 
-#home .item-1{
-    flex: 1;
-} 
-#home  .item-2{
-    margin-left: 15px;
-    flex: 2;
-} 
-#profile-image{
-   
+#home .home-item{
+    
     
 }
-#profile-image img{
-    width: 450px;
+
+#home .home-presentation{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    height: 300px;
+} 
+
+
+#home  .home-technologies{
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-grow: 1;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    display: flex;
+    padding: 10px;
+    border: solid #ffffff 1px;
+    border-radius: 80px;
+}
+
+.presentation-img {
+    background-color: rgb(39, 39, 39, 0.97);
+    width: 400px;
+    border: solid #222020 1px;
+    border-radius: 10px;
     
+}
+.presentation-img img{
+    max-width:300px;
+    max-height: 300px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 800px;
 }
 
 #main-text{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    text-align: justify;
-    height: max-content;
 }
 #main-text h1{
     font-size: 100px;
+    /* margin-top: -140px; */
+    
+    
 }
 #main-text h4{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
     
-    font-size: 40px;
 }
 
- #about{
+
+
+#about{
     grid-area: about;
- }
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: centerSS;
+    
+} 
+
+.content-text{
+    width: auto;
+    text-align: justify;
+    font-size: 30px;
+
+    
+}
  #skills{
     grid-area: skills;
  }
