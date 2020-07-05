@@ -1,15 +1,19 @@
-#grid-container, #head{
-    background: rgb(0, 0, 0, 0.99);
+body{
+    background: rgba(0, 0, 0);
+
+}
+#grid-container{
+    
 }
 a{
     text-decoration: none;
 }
-p, h1, h4, a{
+p, h1, h5, a{
     color: #ffffff;
 }
 .page{
 
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.1);
     border: solid  black 1px;
     border-radius: 10px;
     border-style: ridge;
