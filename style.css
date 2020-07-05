@@ -1,27 +1,29 @@
 body{
-    background: rgba(0, 0, 0);
+    /* background: rgb(150, 145, 145); */
+    background: rgb(0, 0, 0);
+
 
 }
-#grid-container{
-    
-}
+
 a{
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 p, h1, h5, a{
     color: #ffffff;
 }
 .page{
 
-    background-color: rgba(0, 0, 0, 0.1);
-    border: solid  black 1px;
+    background-color: rgba(0, 0, 0, 0.00);
+    /* border: solid  black 1px; */
     border-radius: 10px;
-    border-style: ridge;
+    /* border-style: ridge; */
     padding: 30px;
 }
 
 #head{
-    background-color: rgba(0, 0, 0, 0.99);
+    background-color: rgb(6, 42, 158);
     width: 1fr;
 }
 
@@ -48,3 +50,63 @@ p, h1, h5, a{
     
 }
 
+.home-contacts .linkedin{
+    background-image: url(assets/contact-icons/linkedin-logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.home-contacts .whatsapp{
+    background-image: url(assets/contact-icons/whatsapp.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.home-contacts .email{
+    background-image: url(assets/contact-icons/email.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.home-contacts .github{
+    background-image: url(assets/contact-icons/github2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    
+}
+
+.home-contacts .instagram{
+    background-image: url(assets/contact-icons/instagram-logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.icon img{
+   width: auto;
+   height: auto;
+   border-radius: 50%;
+   
+}
+.home-contacts a{
+    border-radius: 50%;
+    
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    /* border: solid #ffffff 1px; */
+    background-color: #ffffff;
+    padding: 5px;
+    
+    
+}
+.icon:hover{
+   padding: 10px;
+}
