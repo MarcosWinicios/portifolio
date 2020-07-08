@@ -1,0 +1,21 @@
+
+#certificates #certificates-container{
+    /* background-color: aliceblue; */
+    height: auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
+
+#certificates-container > div {
+    background-color: #ffffff;
+    text-align: center;
+    border: solid #ffffff;
+    border-radius: 5px;
+}
+
+#certificates-container > div > p > a{
+    color: black;
+    font-weight: 700;
+}
