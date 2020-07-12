@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Roboto;
-    
+    font-size: 26px;
 }
 li{
     color: #ffffff;
@@ -120,7 +120,7 @@ img{
 .content-text{
     width: auto;
     text-align: justify;
-    font-size: 30px;  
+    font-size: 26px;  
 }
  #skills{
     grid-area: skills;
