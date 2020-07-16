@@ -45,3 +45,8 @@ function smoothScrollTo(endX, endY, duration) {
 function scrollToPosition(to ){
     smoothScrollTo(0, to, 1000)
 }
+
+
+/*Animação dos Skills*/
+
+

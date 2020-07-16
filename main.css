@@ -1,5 +1,6 @@
-@import url("./layout.css");
-@import url("./style.css");
+@import url("css/layout.css");
+@import url("./css/home.css");
+@import url("./css/skills.css");
 @import url("./css/projects.css");
 @import url("./css/certificates.css");
-@import url("./css/skills.css");
+
