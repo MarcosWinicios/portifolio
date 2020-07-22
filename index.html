@@ -8,23 +8,30 @@
 </head>
 <body>
     <div id="grid-container">
-        <header id="head">
-            <div id="logo">
-                <a href="#home">
-                    <h1>MW</h1>
-                </a>
-            </div>
-            <nav id="menu">
-                <a class="itemmenu" href="#home" id="linkhome">HOME</a>
-                <a class="itemmenu" href="#about" id="linksobre">SOBRE</a>
-                <a class="itemmenu" href="#skills" id="linkhabilidades">SKILLS</a>
-                <a class="itemmenu" href="#formation" id="linkformation">FORMAÇÃO</a>
-                <a class="itemmenu" href="#projects" id="linkprojetos">PROJETOS</a>
-                <a class="itemmenu" href="#certificates" id="linkcertificados">CERTIFICADOS</a>
-            </nav>
+        
+        <header class="init" id="head">
+           
+            <!-- <div id="head-container"> -->
+
+                <div id="logo">
+                    <a href="#home">
+                        <h1>MW</h1>
+                    </a>
+                </div>
+                <nav id="menu">
+                    <p><a class="itemmenu" href="#home" id="linkhome">home</a>
+                    <a class="itemmenu" href="#about" id="linksobre">sobre</a>
+                    <a class="itemmenu" href="#skills" id="linkhabilidades">skills</a>
+                    <a class="itemmenu" href="#formation" id="linkformation">formação</a>
+                    <a class="itemmenu" href="#certificates" id="linkcertificados">certificado</a>
+                    <a class="itemmenu" href="#projects" id="linkprojetos">projetos</a>
+                    <a class="itemmenu" href="#contacts" id="linkcontacts">contato</a>
+    
+                </nav>
+            <!-- </div> -->
         </header>
     
-        <section class="page" id="home">
+        <section class="page" class="init" id="home">
             <section class=" home-presentation"> 
                 <div class="presentation-img" id="profile-image"></div>
             
@@ -133,12 +140,14 @@
                             ajudar ONGs encontrarem pessoas que estão dispostas a ajudar animais. Ao longo do desenvolvimento
                             do projeto, o instrutor foi ensinando vários conceitos importantes em desenvolvimento de softwares.
                             Pude adquirir conhecimentos básicos sobre as seguintes tecnologias:
+                            
                             <ul>
                                 <li>Node JS</li>
                                 <li>React JS</li>
                                 <li>React Native</li>
                             </ul>
                         </span>
+                       
                     </div>  
                     <div class="courses">
                         <p><strong>HTML Basico - Bradesco</strong> <strong class="carga-horaria">(11hrs)</strong></p> 
@@ -157,21 +166,25 @@
 
                 <section class="item-formation incompleted-courses">
                     <h3>Cursos em andamento</h3>
-                    <p><strong>Full-Stack completo em Java Web - JDev Treinamentos</strong> <strong class="carga-horaria">(360hrs)</strong></p>
-                    <span>
-                        Full-Stack completo em Java Web - JDev Treinamentos(Alex Fernando Egidio) ​ ( ​ 300+ hrs)
-                        Um curso completo de Java Web, onde tem como conteúdo diversas tecnologias utilizadas nesta área. O
-                        curso promete: Java Básico, JavaScript, HTML, CSS, Servlets e JSP, JSF e JPA, Jasper/iReport, Spring
-                        MVC, Thymeleaf, Arquitetura REST API, Ajax Json e JavaScript, SPA com Angular. Resumidamente
-                        pode-se concluir que os conteúdos abordados neste curso são:
-                        <ul>
-                            <li>Spring Boot(MVC)</li>
-                            <li>Spring REST</li>
-                            <li>JPA - Hibernete (ORM)</li>
-                            <li>SQL e Banco de Dados</li>
-                            <li>Java EE/ Full-Stack</li>
-                        </ul>
-                    </span>
+                    <div class="courses">
+
+                        <p><strong>Full-Stack completo em Java Web - JDev Treinamentos</strong> <strong class="carga-horaria">(360hrs)</strong></p>
+                        <span>
+                            Um curso completo de Java Web, onde tem como conteúdo diversas tecnologias utilizadas nesta área. O
+                            curso promete: Java Básico, JavaScript, HTML, CSS, Servlets e JSP, JSF e JPA, Jasper/iReport, Spring
+                            MVC, Thymeleaf, Arquitetura REST API, Ajax Json e JavaScript, SPA com Angular. Resumidamente e pode-se
+                            concluir que os conteúdos abordados neste curso são: 
+                            
+                            <ul>
+                                <li>Spring Boot(MVC)</li>
+                                <li>Spring REST</li>
+                                <li>JPA - Hibernete (ORM)</li>
+                                <li>SQL e Banco de Dados</li>
+                                <li>Java EE/ Full-Stack</li>
+                            </ul>
+                        </span>
+                        
+                    </div>
                 </section> 
             </div>
         </section>
@@ -260,6 +273,18 @@
                         </a>
                     </p>
                 </div>
+            </section>
+        </section>
+        <section id="contacts" class="page">
+            <h1 class="title">Contato</h1>
+            <section id="contacts-container">
+                <p>Entre em contato para contratar ou obter mais informações</p>
+                <ul>
+                    <li>Linkedin: Marcos Winicios Pereira Martins</li>
+                    <li>Email: pmarcoswinicios@gmail.com</li>
+                    <li>WhatsApp: 62 9 96212064</li>
+                    <li>Instagram: @marcos.w_lr</li>
+                </ul>
             </section>
         </section>
         <footer id="footer">

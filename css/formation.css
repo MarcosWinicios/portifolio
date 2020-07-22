@@ -3,7 +3,7 @@
     padding: 10px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
         "academic"
         "completed"
@@ -12,16 +12,20 @@
     grid-gap: 30px;
 
 }
+#formation-container h3{
+    font-size: 40px;
+}
 .academic{
     grid-area: academic;
-    background-color: blue;
+    /* background-color: blue; */
+}
+.academic p{
+    padding: 8px 0;
 }
 .courses-completed{
     grid-area: completed;
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: column;
-    
+    /* background-color: blueviolet; */
+   
 }
 .courses-completed div{
     margin-top: 25px;
@@ -31,5 +35,19 @@
 
 .incompleted-courses{
     grid-area: incompleted;
-    background-color: rgb(70, 117, 23);
+    /* background-color: rgb(70, 117, 23); */
 }
+.courses{
+    display: flex;
+    flex-direction: column;
+    
+}
+ 
+.courses span{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;    
+}
+ .courses span > ul{
+    padding: 10px 0 0 30px;
+ }

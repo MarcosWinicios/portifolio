@@ -18,6 +18,9 @@ a{
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: rgb(15, 15, 15);
+}
 
 .title{
     font-style: normal;
@@ -30,12 +33,13 @@ a{
 }
 
 .page{
-
-    background-color: rgba(0, 0, 0);
+/* 
+    background-color: rgba(0, 0, 0, 0.925); */
     /* border: solid  black 1px; */
-    border-radius: 10px;
+    /* border-radius: 10px */
     /* border-style: ridge; */
-    padding: 30px;
+    padding: 30px; 
+    /* position: fixed; */
 }
 
 
@@ -43,48 +47,75 @@ a{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows:7vh auto auto auto auto auto 100vh 30vh;
+    grid-template-rows:12vh 100vh auto auto auto auto auto 50vh 30vh;
     grid-template-areas: 
-        ". header ."      
+        "header header header"      
         ". home ."
         ". about ."
         ". skills ."
         ". formation ."
         ". certificates ."
         ". projects ."
+        ". contacts ."
         
         "footer footer footer"
     ;
     grid-gap: 8px;
-    background-color: black;
+    /* background-color: black; */
 }
 
+
 #head{
+    
     grid-area: header; 
     top: 0;
     position: sticky;
     position: -webkit-sticky;
-    justify-content: space-between;
-    align-items: center;
     display: flex;
-    background-color: rgb(0, 0, 0);
-    width: 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.925);
 }
 
+#head-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    background-color: blue;
+    
+}
 
-#menu a{
-    font-size: 22px;
-    font-weight: 500;
-    padding: 3px 6px;
-    margin-left: 5px;
+#logo{
+  
+    border: #ffffff solid 1px;
+    border-radius: 55%;
+    padding: 5px;
+    margin: 8px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+#menu {
+   display: flex;
+   padding: 0;
+   width: auto;
+   justify-content: space-between;
+}
+
+#menu .itemmenu{
+    font-weight: 300;
+    padding: 4px 8px;
+    margin-left: 2px; 
+    text-transform: capitalize;
+    font-size: 16px;
+    
 }
 
 #menu a:hover{
-    padding-bottom: 10px;
-    border-bottom: solid 5px #ffffff;
+    font-weight: 600;
 }
-
-
+    
 #about{
     grid-area: about;
 
@@ -113,11 +144,36 @@ a{
  #certificates{
     grid-area: certificates;
  }
+
+ #contacts{
+    grid-area: contacts;
+    /* background-color: blue; */
+ }
+
+ #contacts-container{
+     height: 60%;
+     /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+ }
+ #contacts-container p{
+    font-size: 30px;
+    font-weight: 500;
+ }
+
+ #contacts-container ul li{
+    list-style: none;
+    padding: 5px 0;
+    
+ }
  #footer{
     grid-area: footer;
     display: flex;
     border-radius: 0;
-    background-color: rgba(99, 38, 38, 0.5);
+   
     align-items: flex-end;
     justify-content: center;
  }
@@ -155,7 +211,7 @@ a{
     
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:7vh auto auto auto 100vh auto 100vh 30vh;
+        grid-template-rows:7vh auto auto auto auto auto auto auto 30vh;
         grid-template-areas: 
             "header"      
             "home"
@@ -164,6 +220,7 @@ a{
             "formation"
             "projects"
             "certificates"
+            "contacts"
             "footer"
         ;
         grid-gap: 10px;
